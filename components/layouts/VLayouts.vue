@@ -1,5 +1,5 @@
 <template>
-  <div class="container mx-auto">
+  <div>
     <v-header :isDark="isDark" @set="(e) => $emit('set', e)" />
     <slot />
   </div>

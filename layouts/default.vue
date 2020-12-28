@@ -40,9 +40,11 @@ html {
 }
 
 .main {
-  margin-top: 90px;
-  @include mq(md) {
-    margin-top: 100px;
+  margin: 120px auto 0;
+  width: 95%;
+  @include mq(sm) {
+    width: 100%;
+    margin: 130px auto 0;
   }
 }
 

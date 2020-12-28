@@ -1,14 +1,11 @@
 <template>
   <div>
-    <h1 class="text-center title">Welcome to page!</h1>
-    <div class="grid xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <v-character-card
-        v-for="i in 100"
-        :key="i"
-        :title="'test'"
-        :url="'/hira_walk.gif'"
-      />
-    </div>
+    <section class="main">
+      <div class="main-wrapper">
+        <span class="main-text">Welcome!!</span>
+        <img class="mx-auto main-visual" src="/hira_walk.gif" alt="hira walk" />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -22,3 +19,31 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+.main-visual {
+  border-radius: 20px;
+}
+.main-wrapper {
+  position: relative;
+}
+.main-text {
+  position: absolute;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 24px;
+  top: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  @include mq(sm) {
+    font-size: 32px;
+    top: 25px;
+  }
+  @include mq(lg) {
+    font-size: 36px;
+    top: 30px;
+  }
+}
+</style>

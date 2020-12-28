@@ -36,7 +36,6 @@ export default Vue.extend({
   z-index: 99;
   &-top {
     padding: 0 20px;
-    color: #d90d0d;
   }
   &-body {
     padding: 0 20px;
