@@ -1,6 +1,6 @@
 <template>
-  <v-layouts :isDark="isDark" @set="(e) => (isDark = e)">
-    <Nuxt class="main" />
+  <v-layouts>
+    <Nuxt />
   </v-layouts>
 </template>
 
@@ -12,16 +12,13 @@ export default Vue.extend({
   head() {
     return {
       bodyAttrs: {
-        class: this.isDark ? 'dark-mode' : 'light-mode',
+        class: this.$store.state.isDark ? 'dark-mode' : 'light-mode',
       },
     }
   },
   components: {
     VLayouts,
   },
-  data: () => ({
-    isDark: false,
-  }),
 })
 </script>
 

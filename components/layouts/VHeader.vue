@@ -5,7 +5,10 @@
       <span class="header-title"><nuxt-link to="/">Home</nuxt-link></span>
       <div class="flex space-x-4">
         <nuxt-link to="/404.html">error</nuxt-link>
-        <v-toggle-button :value="isDark" @input="(e) => $emit('set', e)" />
+        <v-toggle-button
+          :value="isDark"
+          @input="(mode) => changeMode({ mode: mode })"
+        />
       </div>
     </div>
   </header>
@@ -13,16 +16,19 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapActions } from 'vuex'
 import VToggleButton from '~/components/utils/toggle/VToggleButton.vue'
 export default Vue.extend({
   components: {
     VToggleButton,
   },
-  props: {
-    isDark: {
-      type: Boolean,
-      required: true,
+  computed: {
+    isDark() {
+      return this.$store.state.isDark
     },
+  },
+  methods: {
+    ...mapActions(['changeMode']),
   },
 })
 </script>

@@ -3,7 +3,18 @@
     <section class="main">
       <div class="main-wrapper">
         <span class="main-text">Welcome!!</span>
-        <img class="mx-auto main-visual" src="/hira_walk.gif" alt="hira walk" />
+        <img
+          v-if="!isDark"
+          class="mx-auto main-visual"
+          src="/hira_walk.gif"
+          alt="hira walk"
+        />
+        <img
+          v-else
+          class="mx-auto main-visual"
+          src="/hira_zonbi_walk.gif"
+          alt="hira walk zonbi"
+        />
       </div>
     </section>
   </div>
@@ -11,11 +22,15 @@
 
 <script lang="ts">
 import Vue from 'vue'
+import { mapState } from 'vuex'
 import VCharacterCard from '~/components/cards/VCharacterCard.vue'
 
 export default Vue.extend({
   components: {
     VCharacterCard,
+  },
+  computed: {
+    ...mapState(['isDark']),
   },
 })
 </script>

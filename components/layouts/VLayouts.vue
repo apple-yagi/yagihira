@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-header :isDark="isDark" @set="(e) => $emit('set', e)" />
+    <v-header />
     <slot />
   </div>
 </template>
@@ -11,12 +11,6 @@ import VHeader from '~/components/layouts/VHeader.vue'
 export default Vue.extend({
   components: {
     VHeader,
-  },
-  props: {
-    isDark: {
-      type: Boolean,
-      required: true,
-    },
   },
 })
 </script>
