@@ -40,9 +40,9 @@ html {
 }
 
 .main {
-  margin-top: 60px;
+  margin-top: 70px;
   @include mq(md) {
-    margin-top: 70px;
+    margin-top: 80px;
   }
 }
 
@@ -51,37 +51,5 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
-}
-
-h1 {
-  font-size: 24;
-  @include mq(md) {
-    font-size: 28px;
-  }
-  @include mq(xl) {
-    font-size: 32px;
-  }
-}
-
-h2 {
-  font-size: 20px;
-  @include mq(md) {
-    font-size: 24px;
-  }
-  @include mq(xl) {
-    font-size: 28px;
-  }
-}
-
-.title {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 30px;
-  @include mq(md) {
-    font-size: 24px;
-  }
-  @include mq(lg) {
-    font-size: 28px;
-  }
 }
 </style>

@@ -48,6 +48,7 @@ export default {
       '~/assets/_responsive.scss',
       '~/assets/mode/_dark.scss',
       '~/assets/mode/_light.scss',
+      '~/assets/_font.scss',
     ],
   },
 
