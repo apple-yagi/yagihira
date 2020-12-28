@@ -1,7 +1,9 @@
 <template>
   <div class="not-found">
-    <h1 class="not-found_title">Not Found!</h1>
-    <img class="mx-auto" src="/hira_zonbi_walk.gif" alt="zonbi" />
+    <div class="not-found_frame">
+      <h1 class="not-found_title title">Not Found!</h1>
+      <img class="not-found_icon" src="/hira_zonbi_walk.gif" alt="zonbi" />
+    </div>
   </div>
 </template>
 
@@ -29,8 +31,19 @@ export default Vue.extend({
 .not-found {
   text-align: center;
   align-items: center;
+  margin: 100px auto 0;
+  @include mq(md) {
+    margin: 150px auto 0;
+  }
+  &_frame {
+    padding: 20px;
+    background-color: #364549;
+  }
   &_title {
-    font-size: 26px;
+    color: whitesmoke;
+  }
+  &_icon {
+    margin: auto;
   }
 }
 </style>

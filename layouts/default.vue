@@ -1,8 +1,29 @@
 <template>
-  <div>
-    <Nuxt />
-  </div>
+  <v-layouts :isDark="isDark" @set="(e) => (isDark = e)">
+    <Nuxt class="main" />
+  </v-layouts>
 </template>
+
+<script lang="ts">
+import Vue from 'vue'
+import VLayouts from '~/components/layouts/VLayouts.vue'
+
+export default Vue.extend({
+  head() {
+    return {
+      bodyAttrs: {
+        class: this.isDark ? 'dark-mode' : '',
+      },
+    }
+  },
+  components: {
+    VLayouts,
+  },
+  data: () => ({
+    isDark: false,
+  }),
+})
+</script>
 
 <style lang="scss">
 html {
@@ -16,6 +37,13 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+}
+
+.main {
+  margin-top: 60px;
+  @include mq(md) {
+    margin-top: 70px;
+  }
 }
 
 *,
@@ -51,6 +79,9 @@ h2 {
   line-height: 30px;
   @include mq(md) {
     font-size: 24px;
+  }
+  @include mq(lg) {
+    font-size: 28px;
   }
 }
 </style>
