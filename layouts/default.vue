@@ -6,8 +6,9 @@
 
 <style lang="scss">
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Avenir Next', 'Montserrat', Verdana, '游ゴシック', 'Yu Gothic',
+    'YuGothic', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ',
+    Meiryo, Osaka, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -22,5 +23,34 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+h1 {
+  font-size: 24;
+  @include mq(md) {
+    font-size: 28px;
+  }
+  @include mq(xl) {
+    font-size: 32px;
+  }
+}
+
+h2 {
+  font-size: 20px;
+  @include mq(md) {
+    font-size: 24px;
+  }
+  @include mq(xl) {
+    font-size: 28px;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  @include mq(md) {
+    font-size: 24px;
+  }
 }
 </style>
