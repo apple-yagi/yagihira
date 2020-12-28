@@ -10,7 +10,16 @@ import Vue from 'vue'
 export default Vue.extend({
   head() {
     return {
+      htmlAttrs: {
+        lang: 'ja',
+      },
       title: 'Page not found',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { hid: 'description', name: 'description', content: '' },
+      ],
+      link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     }
   },
 })
