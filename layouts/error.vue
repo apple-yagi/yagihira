@@ -7,7 +7,13 @@
 
 <script lang="ts">
 import Vue from 'vue'
-export default Vue.extend({})
+export default Vue.extend({
+  head() {
+    return {
+      title: 'Page not found',
+    }
+  },
+})
 </script>
 
 <style lang="scss" scoped>

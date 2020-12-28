@@ -4,6 +4,9 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
+    htmlAttrs:{
+      lang: 'ja'
+    },
     title: 'yagihira-app',
     meta: [
       { charset: 'utf-8' },
@@ -50,13 +53,7 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {},
 
-  router: {
-    extendRoutes (routes, resolve) {
-      routes.push({
-        name: 'Not Found',
-        path: '*',
-        component: resolve(__dirname, 'pages/errors/404.vue')
-      })
-    }
+  generate: {
+    fallback: true,
   },
 }
