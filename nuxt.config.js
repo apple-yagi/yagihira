@@ -44,7 +44,11 @@ export default {
   ],
 
   styleResources: {
-    scss: ['~/assets/_responsive.scss', '~/assets/mode/_dark.scss'],
+    scss: [
+      '~/assets/_responsive.scss',
+      '~/assets/mode/_dark.scss',
+      '~/assets/mode/_light.scss',
+    ],
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

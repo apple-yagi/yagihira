@@ -12,7 +12,7 @@ export default Vue.extend({
   head() {
     return {
       bodyAttrs: {
-        class: this.isDark ? 'dark-mode' : '',
+        class: this.isDark ? 'dark-mode' : 'light-mode',
       },
     }
   },

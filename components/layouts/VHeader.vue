@@ -27,7 +27,6 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .header {
   align-items: center;
-  border-bottom: 1px solid #ebedef;
   position: fixed;
   top: 0;
   left: 0;
