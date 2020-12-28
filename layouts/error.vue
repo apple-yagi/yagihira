@@ -33,7 +33,7 @@ export default Vue.extend({
   align-items: center;
   margin: 100px auto 0;
   @include mq(md) {
-    margin: 150px auto 0;
+    margin: 140px auto 0;
   }
   &_frame {
     padding: 20px;
