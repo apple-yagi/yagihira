@@ -37,11 +37,11 @@ export default {
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
     // scss
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
   ],
 
   styleResources: {
-    scss: ['~/assets/_responsive.scss']
+    scss: ['~/assets/_responsive.scss'],
   },
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
