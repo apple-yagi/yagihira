@@ -1,31 +1,33 @@
 <template>
   <div class="card">
-    <div class="card-title">寿司</div>
+    <div class="card-title">{{ title }}</div>
+    <div>
+      <img :src="url" alt="img" />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-export default Vue.extend({})
+import Vue, { PropType } from 'vue'
+
+export default Vue.extend({
+  props: {
+    title: {
+      type: String as PropType<string>,
+      required: true,
+    },
+    url: {
+      type: String as PropType<string>,
+      required: true,
+    },
+  },
+})
 </script>
 
 <style lang="scss" scoped>
 .card {
   &-title {
     font-size: 16px;
-    background-color: azure;
-    @include mq(sm) {
-      background-color: peru;
-    }
-    @include mq(md) {
-      background-color: red;
-    }
-    @include mq(lg) {
-      background-color: blue;
-    }
-    @include mq(xl) {
-      background-color: aquamarine;
-    }
   }
 }
 </style>
