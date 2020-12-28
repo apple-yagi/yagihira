@@ -40,7 +40,7 @@ html {
 }
 
 .main {
-  margin-top: 70px;
+  margin-top: 90px;
   @include mq(md) {
     margin-top: 100px;
   }
