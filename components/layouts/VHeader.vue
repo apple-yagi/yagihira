@@ -2,7 +2,7 @@
   <header class="header">
     <p class="header-top">Created by Hiraoka & Yanagi</p>
     <div class="header-body flex justify-between">
-      <span class="header-title"><nuxt-link to="/">Title</nuxt-link></span>
+      <span class="header-title"><nuxt-link to="/">Home</nuxt-link></span>
       <div class="flex space-x-4">
         <nuxt-link to="/404.html">error</nuxt-link>
         <v-toggle-button :value="isDark" @input="(e) => $emit('set', e)" />
