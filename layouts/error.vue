@@ -1,8 +1,15 @@
 <template>
   <div class="not-found">
-    <div class="not-found_frame">
-      <h1 class="not-found_title title">Not Found!</h1>
-      <img class="not-found_icon" src="/hira_zonbi_walk.gif" alt="zonbi" />
+    <div class="not-found_body">
+      <h1 class="not-found_text title">Not Found!</h1>
+      <img
+        v-for="i in 100"
+        :key="i"
+        :id="`zonbi${i}`"
+        class="not-found_icon"
+        src="/hira_zonbi_walk.gif"
+        alt="zonbi"
+      />
     </div>
   </div>
 </template>
@@ -24,6 +31,17 @@ export default Vue.extend({
       link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     }
   },
+  mounted() {
+    for (let i = 1; i < 100; i++) {
+      const zonbi = document.getElementById(`zonbi${i}`)
+      if (zonbi) zonbi.style.left = `${this.getRandomInt()}px`
+    }
+  },
+  methods: {
+    getRandomInt() {
+      return Math.floor(Math.random() * Math.floor(window.innerWidth))
+    },
+  },
 })
 </script>
 
@@ -31,19 +49,25 @@ export default Vue.extend({
 .not-found {
   text-align: center;
   align-items: center;
-  margin: 100px auto 0;
+  margin: 70px auto 0;
   @include mq(md) {
-    margin: 120px auto 0;
+    margin: 80px auto 0;
   }
-  &_frame {
+  &_body {
     padding: 20px;
-    background-color: #364549;
+    position: relative;
   }
-  &_title {
-    color: whitesmoke;
+  &_text {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: center;
   }
   &_icon {
-    margin: auto;
+    position: absolute;
+    top: 0;
   }
 }
 </style>

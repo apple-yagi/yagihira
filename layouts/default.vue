@@ -41,7 +41,7 @@ html {
   width: 95%;
   @include mq(sm) {
     width: 100%;
-    margin: 130px auto 0;
+    margin: 150px auto 0;
   }
 }
 

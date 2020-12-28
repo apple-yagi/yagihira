@@ -44,7 +44,6 @@ export default Vue.extend({
 }
 .main-text {
   position: absolute;
-  display: inline-block;
   font-weight: bold;
   font-size: 24px;
   top: 20px;

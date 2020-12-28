@@ -39,6 +39,10 @@ export default Vue.extend({
   top: 0;
   left: 0;
   width: 100%;
+  height: 70px;
+  @include mq(md) {
+    height: 80px;
+  }
   z-index: 99;
   &-top {
     padding: 0 20px;
@@ -46,10 +50,6 @@ export default Vue.extend({
   &-body {
     padding: 0 20px;
     align-items: center;
-    height: 50px;
-    @include mq(md) {
-      height: 60px;
-    }
   }
   &-title {
     font-size: 24px;
