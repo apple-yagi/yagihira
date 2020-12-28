@@ -4,5 +4,8 @@
   .header {
     background-color: #121212;
     border-bottom: 1px solid #333;
+    &-top {
+      background-color: #191919;
+    }
   }
 }

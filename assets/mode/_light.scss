@@ -1,7 +1,10 @@
 .light-mode {
   background-color: whitesmoke;
   .header {
-    background-color: white;
+    background-color: hsla(0, 0%, 100%, .97);
     border-bottom: 1px solid #ebedef;
+    &-top {
+      background-color: #fefdfa;
+    }
   }
 }
