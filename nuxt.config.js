@@ -49,6 +49,7 @@ export default {
       '~/assets/mode/_dark.scss',
       '~/assets/mode/_light.scss',
       '~/assets/_font.scss',
+      '~/assets/_animation.scss',
     ],
   },
 
