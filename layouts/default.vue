@@ -39,9 +39,19 @@ html {
 .main {
   margin: 120px auto 0;
   width: 95%;
+  @include mq(lg) {
+    width: 100%;
+    margin: 125px auto 0;
+  }
+}
+
+.section {
+  margin: 120px auto 0;
+  max-width: 800px;
+  padding: 0 20px;
   @include mq(sm) {
     width: 100%;
-    margin: 150px auto 0;
+    margin: 125px auto 0;
   }
 }
 

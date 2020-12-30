@@ -1,5 +1,8 @@
 .light-mode {
   background-color: whitesmoke;
+  .bg-image {
+    background-image: url('/hira_walk.gif');
+  }
   .header {
     background-color: hsla(0, 0%, 100%, .97);
     border-bottom: 1px solid #ebedef;
@@ -9,6 +12,17 @@
     }
   }
   .main-visual {
+    background-color: whitesmoke;
     box-shadow: 1px 3px 8px 1px #ccc inset;
+  }
+  .right {
+    .triangle {
+      background-color: #EF5350;
+    }
+  }
+  .left {
+    .triangle {
+      background-color: #42A5F5;
+    }
   }
 }

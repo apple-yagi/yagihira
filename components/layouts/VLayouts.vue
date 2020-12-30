@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-image">
     <v-header />
     <slot />
   </div>

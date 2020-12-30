@@ -1,5 +1,5 @@
 <template>
-  <section class="main">
+  <section class="main container">
     <div class="main-wrapper">
       <client-only>
         <span class="main-text">Welcome!!</span>
@@ -38,6 +38,7 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .main-visual {
   border-radius: 20px;
+  width: 800px;
 }
 .main-wrapper {
   position: relative;
