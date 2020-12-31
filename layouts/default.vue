@@ -35,30 +35,4 @@ html {
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
-
-.main {
-  margin: 120px auto 0;
-  width: 95%;
-  @include mq(lg) {
-    width: 100%;
-    margin: 125px auto 0;
-  }
-}
-
-.section {
-  margin: 120px auto 0;
-  max-width: 800px;
-  padding: 0 20px;
-  @include mq(sm) {
-    width: 100%;
-    margin: 125px auto 0;
-  }
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-}
 </style>

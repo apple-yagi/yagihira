@@ -5,12 +5,20 @@
       <div class="right">
         <div class="triangle"></div>
         <p class="text">Illustrator</p>
-        <img class="image" src="/pose_kiri_man.png" alt="dokata" />
+        <img
+          class="image"
+          src="/character/img/pose_kiri_man.png"
+          alt="dokata"
+        />
       </div>
       <div class="left">
         <div class="triangle"></div>
         <p class="text">Web Engineer</p>
-        <img class="image" src="/job_it_dokata.png" alt="dokata" />
+        <img
+          class="image"
+          src="/character/img/job_it_dokata.png"
+          alt="dokata"
+        />
       </div>
     </div>
   </section>

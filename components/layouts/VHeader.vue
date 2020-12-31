@@ -4,7 +4,7 @@
     <div class="header-body flex justify-between">
       <span class="header-title"><nuxt-link to="/">Home</nuxt-link></span>
       <div class="flex space-x-4">
-        <nuxt-link to="/404.html">error</nuxt-link>
+        <v-hamburer-menu />
         <v-toggle-button
           :value="isDark"
           @input="(mode) => changeMode({ mode: mode })"
@@ -18,9 +18,11 @@
 import Vue from 'vue'
 import { mapActions } from 'vuex'
 import VToggleButton from '~/components/utils/toggle/VToggleButton.vue'
+import VHamburerMenu from '~/components/layouts/VHamburerMenu.vue'
 export default Vue.extend({
   components: {
     VToggleButton,
+    VHamburerMenu,
   },
   computed: {
     isDark() {

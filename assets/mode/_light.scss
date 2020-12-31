@@ -1,7 +1,7 @@
 .light-mode {
   background-color: whitesmoke;
   .bg-image {
-    background-image: url('/hira_walk.gif');
+    background-image: url('/character/gif/hira_walk.gif');
   }
   .header {
     background-color: hsla(0, 0%, 100%, .97);
@@ -9,6 +9,9 @@
     &-top {
       background-color: #fefdfa;
       color: #d90d0d;
+    }
+    .sidebar {
+      background-color: orange;
     }
   }
   .main-visual {

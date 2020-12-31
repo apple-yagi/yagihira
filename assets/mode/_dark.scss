@@ -2,7 +2,7 @@
   background-color: rgba(32, 33, 36, 1);
   color: whitesmoke;
   .bg-image {
-    background-image: url('/hira_zonbi_walk.gif');
+    background-image: url('/character/gif/hira_zonbi_walk.gif');
   }
   .header {
     background-color: #121212;
@@ -10,6 +10,9 @@
     &-top {
       background-color: #131313;
       color: #26A69A;
+    }
+    .sidebar {
+      background-color: blueviolet;
     }
   }
   .main-visual {

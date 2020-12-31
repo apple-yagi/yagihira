@@ -50,6 +50,7 @@ export default {
       '~/assets/mode/_light.scss',
       '~/assets/_font.scss',
       '~/assets/_animation.scss',
+      '~/assets/_default.scss',
     ],
   },
 
