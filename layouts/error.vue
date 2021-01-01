@@ -7,7 +7,7 @@
         :key="i"
         :id="`zonbi${i}`"
         class="not-found_icon"
-        src="/hira_zonbi_walk.gif"
+        src="/character/gif/hira_zonbi_walk.gif"
         alt="zonbi"
       />
     </div>
