@@ -17,7 +17,7 @@
       />
     </button>
     <transition name="slide">
-      <div v-show="isOpen" class="sidebar">
+      <div v-if="isOpen" class="sidebar">
         <button class="sidebar-close" @click="isOpen = false">
           <img
             v-if="isDark"
@@ -46,6 +46,14 @@
               <nuxt-link to="/404">error </nuxt-link>
             </li>
           </ul>
+        </div>
+        <div class="sidebar-icon">
+          <img v-if="!isDark" src="/character/gif/hira_walk.gif" alt="walk" />
+          <img
+            v-else
+            src="/character/gif/hira_zonbi_walk.gif"
+            alt="zonbi walk"
+          />
         </div>
       </div>
     </transition>
@@ -97,6 +105,22 @@ export default Vue.extend({
     position: absolute;
     top: 20px;
     right: 20px;
+  }
+  &-icon {
+    position: absolute;
+    bottom: 25vh;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    @include mq(sm) {
+      width: 300px;
+      bottom: 20vh;
+    }
+    @include mq(lg) {
+      width: 350px;
+      bottom: 15vh;
+    }
   }
 }
 
