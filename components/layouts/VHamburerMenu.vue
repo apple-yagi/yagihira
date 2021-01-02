@@ -43,7 +43,7 @@
             <li @click="isOpen = false">Illustrator</li>
             <li @click="isOpen = false">Web Engineer</li>
             <li @click="isOpen = false">
-              <nuxt-link to="/404">error </nuxt-link>
+              <nuxt-link to="/404">error</nuxt-link>
             </li>
           </ul>
         </div>
