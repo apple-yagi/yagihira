@@ -7,13 +7,13 @@
       <img
         v-if="!isDark"
         class="mx-auto main-visual"
-        src="/character/gif/hira_walk.gif"
+        :src="$urls.hira_walk"
         alt="hira walk"
       />
       <img
         v-else
         class="mx-auto main-visual"
-        src="/character/gif/hira_zonbi_walk.gif"
+        :src="$urls.hira_zonbi_walk"
         alt="hira walk zonbi"
       />
     </div>

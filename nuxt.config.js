@@ -4,8 +4,8 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    htmlAttrs:{
-      lang: 'ja'
+    htmlAttrs: {
+      lang: 'ja',
     },
     title: 'yagihira-app',
     meta: [
@@ -20,7 +20,12 @@ export default {
   css: [],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [],
+  plugins: [
+    {
+      src: '@/plugins/urls.ts',
+      ssr: true,
+    },
+  ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,

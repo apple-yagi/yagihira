@@ -48,12 +48,8 @@
           </ul>
         </div>
         <div class="sidebar-icon">
-          <img v-if="!isDark" src="/character/gif/hira_walk.gif" alt="walk" />
-          <img
-            v-else
-            src="/character/gif/hira_zonbi_walk.gif"
-            alt="zonbi walk"
-          />
+          <img v-if="!isDark" :src="$urls.hira_walk" alt="walk" />
+          <img v-else :src="$urls.hira_zonbi_walk" alt="zonbi walk" />
         </div>
       </div>
     </transition>
