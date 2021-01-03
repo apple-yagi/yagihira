@@ -1,6 +1,6 @@
-const hira_walk = 'http://d27fueny0694oh.cloudfront.net/gif/hira_walk.gif'
+const hira_walk = 'https://d27fueny0694oh.cloudfront.net/gif/hira_walk.gif'
 const hira_zonbi_walk =
-  'http://d27fueny0694oh.cloudfront.net/gif/hira_zonbi_walk.gif'
+  'https://d27fueny0694oh.cloudfront.net/gif/hira_zonbi_walk.gif'
 
 export default (context: any, inject: any) => {
   const urls = {
