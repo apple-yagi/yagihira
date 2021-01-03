@@ -3,14 +3,14 @@
     <button class="sidebar-open" @click="isOpen = true">
       <img
         v-if="isDark"
-        src="/icons/menu-white.svg"
+        :src="$urls.menu_white"
         alt="menu"
         width="28"
         height="28"
       />
       <img
         v-else
-        src="/icons/menu-black.svg"
+        :src="$urls.menu_black"
         alt="menu-black"
         width="28"
         height="28"
@@ -21,14 +21,14 @@
         <button class="sidebar-close" @click="isOpen = false">
           <img
             v-if="isDark"
-            src="/icons/close-white.svg"
+            :src="$urls.close_white"
             alt="close-white"
             width="28"
             height="28"
           />
           <img
             v-else
-            src="/icons/close-black.svg"
+            :src="$urls.close_black"
             alt="close-black"
             width="28"
             height="28"

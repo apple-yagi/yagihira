@@ -3,7 +3,7 @@
     <div class="flex">
       <img
         class="profile-icon rounded-full"
-        src="/character/img/job_it_dokata.png"
+        :src="$urls.job_it_dokata"
         alt="yanagi"
         ontouchstart=""
       />

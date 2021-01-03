@@ -8,7 +8,7 @@
       <img
         class="profile-icon rounded-full"
         ontouchstart=""
-        src="/character/img/pose_kiri_man.png"
+        :src="$urls.pose_kiri_man"
         alt="kiri"
       />
     </div>
