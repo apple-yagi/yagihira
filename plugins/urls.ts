@@ -7,6 +7,5 @@ export default (context: any, inject: any) => {
     hira_walk: hira_walk,
     hira_zonbi_walk: hira_zonbi_walk,
   }
-  console.log(urls)
   inject('urls', urls)
 }
