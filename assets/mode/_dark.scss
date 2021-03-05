@@ -1,9 +1,6 @@
 .dark-mode {
   background-color: rgba(32, 33, 36, 1);
   color: whitesmoke;
-  .bg-image {
-    background-image: url('https://d27fueny0694oh.cloudfront.net/gif/hira_zonbi_walk.gif');
-  }
   .header {
     background-color: #121212;
     border-bottom: 1px solid #333;
@@ -13,20 +10,6 @@
     }
     .sidebar {
       background-color: blueviolet;
-    }
-  }
-  .main-visual {
-    background-color: rgba(32, 33, 36, 1);
-    box-shadow: 1px 3px 8px 1px #333 inset;
-  }
-  .right {
-    .triangle {
-      background-color: #546E7A;
-    }
-  }
-  .left {
-    .triangle {
-      background-color: #757575;
     }
   }
 }

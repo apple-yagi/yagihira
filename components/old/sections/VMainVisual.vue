@@ -23,7 +23,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapState } from 'vuex'
-import VCharacterCard from '~/components/top/cards/VCharacterCard.vue'
+import VCharacterCard from '~/components/old/cards/VCharacterCard.vue'
 
 export default Vue.extend({
   components: {
